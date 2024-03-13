@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <selector xmlns:android="https://schemas.android.com/apk/res/android">
+        <item android:state_pressed="true" android:color="@color/red"/>
+        <item android:state_focused="true" android:color="@color/yellow"/>
+        <item android:color="@color/green"/>
+    </selector>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="801dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="27dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="137dp"
+            android:layout_height="42dp"
+            android:text="Welcome!"
+            android:textColor="#EF2222"
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+        />
+
+        <TextView
+
+            android:layout_width="122dp"
+            android:layout_height="39dp"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="116dp"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:text="Section D"
+            android:textSize="25sp"
+        />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200pt"
+            android:layout_marginBottom="4dp"
+            android:forceHasOverlappingRendering="true"
+            android:text="Login"
+            android:textColorLink="#BE61CD"
+            android:textSize="25sp"
+        />
+
+        <Button
+            android:id="@+id/btnGrades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="Grades"
+            android:textColorLink="#BE61CD"
+            android:textSize="25sp"
+        />
+
+        <Button
+            android:id="@+id/btnSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Schedule"
+            android:textColorLink="#BE61CD"
+            android:textSize="25sp"
+
+        />
+    </LinearLayout>
+
+
+</RelativeLayout>
