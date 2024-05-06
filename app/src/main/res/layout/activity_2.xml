@@ -4,14 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login_background"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="411dp"
-        android:layout_height="546dp"
+        android:layout_width="368dp"
+        android:layout_height="295dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/loginform_gradient"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="2dp">
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.566">
 
         <TextView
             android:layout_width="match_parent"
@@ -19,28 +27,39 @@
             android:layout_margin="10dp"
             android:paddingTop="10dp"
             android:text="Student Number"
-        />
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
         <EditText
-            android:inputType="number"
+            android:id="@+id/studentNumberEditText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-        />
+            android:layout_height="60dp"
+            android:inputType="number"
+            android:padding="10dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:paddingTop="10dp"
             android:text="Birth Date"
-        />
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
         <EditText
-            android:inputType="date"
+            android:id="@+id/birthDateEditText"
             android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="date"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-        />
+            android:layout_gravity="center"
+            android:onClick="loginClicked"
+            android:text="Login" />
 
 
     </LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Gradient background with specified colors -->
+    <gradient
+        android:startColor="#4B4CED"
+        android:endColor="#37B6E9"
+        android:angle="135" />
+
+    <!-- Corner radius for rounded corners -->
+    <corners android:radius="16dp" />
+
+    <!-- Outer shadow for glassy effect -->
+    <stroke
+        android:width="1dp"
+        android:color="#AAFFFFFF" />
+
+    <!-- Inner shadow for glassy effect -->
+    <stroke
+        android:width="1dp"
+        android:color="#55FFFFFF" />
+
+</shape>

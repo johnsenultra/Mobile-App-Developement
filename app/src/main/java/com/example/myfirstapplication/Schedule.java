@@ -3,6 +3,7 @@ package com.example.myfirstapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class Schedule extends AppCompatActivity {
 

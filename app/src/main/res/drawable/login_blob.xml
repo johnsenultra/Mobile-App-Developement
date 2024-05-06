@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Diamond shape: Solid color -->
+    <item android:gravity="center">
+        <rotate
+            android:fromDegrees="-34">
+            <shape android:shape="rectangle">
+                <gradient
+                    android:startColor="#37B6E9"
+                    android:endColor="#4B4CED" />
+            </shape>
+        </rotate>
+    </item>
+
+    <!-- Gradient background -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#242C3B"
+                android:angle="135" />
+        </shape>
+    </item>
+
+</layer-list>

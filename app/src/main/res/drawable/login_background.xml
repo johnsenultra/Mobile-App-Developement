@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Gradient color: Fill the entire background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid
+                android:color="#242C3B"
+                android:angle="135" />
+        </shape>
+    </item>
+
+    <!-- Diamond shape: Positioned and sized within the background -->
+    <item
+        android:left="0dp"
+        android:right="0dp"
+        android:top="-1000dp"
+        android:bottom="0dp"
+        android:drawable="@drawable/login_blob" />
+
+</layer-list>
